@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version; pip --version; \\(Get-Command uv -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(Get-ChildItem \"c:\\\\Apps\\\\Other\\\\AzureAiServices\\\\Anthropic\" | Select-Object Name; \"---\"; \\(Get-Command py -ErrorAction SilentlyContinue\\).Source; \\(Get-Command python3 -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(\\(Get-Command node -ErrorAction SilentlyContinue\\).Source; \\(Get-Command npx -ErrorAction SilentlyContinue\\).Source)",
+      "WebFetch(domain:www.anthropiccertifications.com)",
+      "Bash(python mcp_client.py)",
+      "Bash(uv run *)",
+      "Bash(uv pip *)"
+    ]
+  }
+}
